@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+// Components
 import { Header } from "../components/shared/Header";
 import { Footer } from "app/components/shared/Footer";
 import "app/sass/globals.scss";
@@ -14,6 +15,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body>

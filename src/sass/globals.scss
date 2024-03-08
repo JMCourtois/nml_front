@@ -1,8 +1,27 @@
 @import "variables.scss";
 
-body {
+* {
     margin: 0;
-    padding: 0;
-    background: $primary-dark;
-    color: $primary-light;
+	padding: 0;
+	border: 0;
+
+	font-size: 18pt;
+	font-family: inherit;
+
+	vertical-align: baseline;
+
 }
+
+h1 {
+    font-size: 300%;
+    font-family: $font-header;
+}
+
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     background: $primary-dark;
+//     color: $primary-light;
+//     font-family: $font-text;
+// }

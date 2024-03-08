@@ -15,6 +15,9 @@ $accent-700:    #3C504B;
 $accent-900:    #2D3332;
 
 // Fonts
-// H1 - Amatic SC
-// H3 & Bold - Caveat
-// P  - Martel 
+$font-header: 'AmaticSC';
+$font-accent: 'Caveat';
+$font-text:   'Martel';
+
+// Units
+$distance-unit: 9px;

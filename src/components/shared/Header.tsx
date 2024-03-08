@@ -1,8 +1,10 @@
 import Link from "next/link";
+import styles from "./Header.module.scss";
+
 
 export const Header = () => {
     return(
-        <header>
+        <header className={styles.header}>
             <nav>
                 <ul>
                     <Link href="/">
