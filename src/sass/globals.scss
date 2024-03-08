@@ -5,7 +5,7 @@
 	padding: 0;
 	border: 0;
 
-	font-size: 18pt;
+	font-size: inherit;
 	font-family: inherit;
 
 	vertical-align: baseline;
@@ -20,6 +20,8 @@ h1 {
 body {
 	background-color: $primary-dark;
 	color: $primary-light;
+	font-family: $font-text;
+	font-size: 16pt;
 }
 
 // * {
