@@ -22,6 +22,10 @@ export const Header = () => {
                     <Link href="/technical">
                         <li>Technical</li>
                     </Link>
+
+                    <Link className={styles.cta} href="/support">
+                        <li >Support</li>
+                    </Link>
                 </ul>
             </nav>
         </header>

@@ -17,6 +17,10 @@ h1 {
     font-family: $font-header;
 }
 
+body {
+	background-color: $primary-dark;
+	color: $primary-light;
+}
 
 // * {
 //     margin: 0;

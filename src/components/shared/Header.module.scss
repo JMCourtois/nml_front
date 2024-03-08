@@ -1,35 +1,59 @@
 .header {
     padding: 20px;
 
-    nav > ul {
+    ul {
         display: flex;
         justify-content: center;
     }
 
     li {
         display: inline;
-        margin-right: 20px;
     }
 
     a {
         text-decoration: none;
-        color: $primary-dark;
+        color: $primary-light;
         font-family: $font-accent;
         font-weight: bold;
-        
-        padding: 14px 20px;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-        
-        &:hover {
-            background-color: #ddd;
+        padding: 8px 30px;
+
+        position: relative; 
+        overflow: hidden;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $primary-accent;
+            transition: width 0.4s ease;
+            left: 16px
         }
-        &:active {
-            font-weight: bolder;
+    
+        &:hover::after {
+            width: 70%;
+        }
+    }
+    
+    .cta {
+        background-color: $primary-accent;
+        color: $primary-dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+
+        transition: background-color 0.3s, transform 0.3s;
+        
+
+        &:hover {
+            background-color: $accent-100;
+            transform: scale(1.02);
         }
     }
 
-    
     .active {
         color: green;
     }
