@@ -8,7 +8,7 @@ export const Header = () => {
             <nav>
                 <ul>
                     <Link href="/">
-                        <li>Home</li>
+                        <img src="/NML-dark.png" alt="logo" />
                     </Link>
 
                     <Link href="/cognition">

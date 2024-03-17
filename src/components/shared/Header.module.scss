@@ -1,11 +1,14 @@
 .header {
-    padding: 20px;
     font-size: 18pt;
     font-family: $font-accent;
+
+    // This will apply as soon as you scroll - in progress!!!
+    // transform: scale(0.8);
 
     ul {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     li {
@@ -39,6 +42,11 @@
         }
     }
     
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+    
     .cta {
         background-color: $primary-accent;
         color: $primary-dark;
@@ -59,8 +67,4 @@
     .active {
         color: green;
     }
-
-
-  
-
 }

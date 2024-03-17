@@ -13,8 +13,17 @@
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 3rem;
     font-family: $font-header;
+}
+
+h2 {
+	font-size: 2rem;
+	font-family: $font-accent;
+}
+h3 {
+	font-size: 1.6rem;
+	font-family: $font-accent;
 }
 
 body {
@@ -23,11 +32,3 @@ body {
 	font-family: $font-text;
 	font-size: 16pt;
 }
-
-// * {
-//     margin: 0;
-//     padding: 0;
-//     background: $primary-dark;
-//     color: $primary-light;
-//     font-family: $font-text;
-// }
