@@ -1,14 +1,38 @@
 .header {
     font-size: 18pt;
     font-family: $font-accent;
+    position: sticky;
+    top: 0;
 
-    // This will apply as soon as you scroll - in progress!!!
-    // transform: scale(0.8);
+
+    .backgroundLayer {
+        position: absolute;
+        top: 0;
+        z-index: 1050;
+        height: 100%;
+        width: 100%;
+        background-color: $primary-dark;
+        transition: transform 0.5s ease; 
+        transform-origin: top center;
+        
+        &.scrolled {
+            transform: scaleY(0.85);
+        }
+    }
 
     ul {
+        position: sticky;
+        top: 0;
+        z-index: 1100;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:center;        
+        transition: transform 0.5s ease; 
+        transform-origin: top center;
+        
+        &.scrolled {
+            transform: scale(0.9);
+        }
     }
 
     li {
@@ -16,55 +40,70 @@
     }
 
     a {
-        text-decoration: none;
-        color: $primary-light;
-        font-family: $font-accent;
-        font-weight: bold;
-        padding: 8px 30px;
-
         position: relative; 
         overflow: hidden;
     
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0%;
-            height: 2px;
-            background-color: $primary-accent;
-            transition: width 0.4s ease;
-            left: 16px
+        padding: 8px 24px;
+        margin: 0px 20px;
+        color: $primary-light;
+        font-family: $font-accent;
+        font-weight: bold;
+        text-decoration: none;
+        opacity: 0.8;
+
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+        &.menuLogo {
+            padding: 0px 24px;
+            &:hover {
+                transform: scale(1.02);
+                opacity: 1;
+            }
+        }
+
+        &.menuLink {
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 1.5px;
+                background-color: $primary-accent;
+                transition: width 0.4s ease;
+                left: 16px
+            }
+
+            &:hover::after {
+                width: 70%;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
         }
     
-        &:hover::after {
-            width: 70%;
-        }
     }
     
     img {
-        width: 5rem;
-        height: 5rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
     
     .cta {
-        background-color: $primary-accent;
-        color: $primary-dark;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: $primary-accent;
+        padding: 8px 24px;
         border-radius: 10px;
+        color: $primary-dark;
 
         transition: background-color 0.3s, transform 0.3s;
-        
 
         &:hover {
             background-color: $accent-100;
             transform: scale(1.02);
         }
-    }
-
-    .active {
-        color: green;
     }
 }

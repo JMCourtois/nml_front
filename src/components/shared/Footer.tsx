@@ -4,13 +4,11 @@ import styles from './Footer.module.scss';
 export const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.footerContent}>
-                {/* Logo and Description */}
+            <div className={styles.footerMain}>
                 <div className={styles.logoSection}>
                     <img src="/NML-dark.png" alt="Logo"/>
-                    <p>High quality coding education maintained by an open source community.</p>
+                    <p>Building Tomorrow's Talent, Today - Learn, Grow, Innovate.</p>
                 </div>
-
 
                 <div className={styles.linksSection}>
                     <div className={styles.linkColumn}>
@@ -39,27 +37,24 @@ export const Footer = () => {
                 </div>
             </div>
 
-            {/* Social Media Icons */}
+            
+        
             <div className={styles.socialMediaSection}>
-                <div className={styles.socialMediaSection}>
-                    {/* GitHub Icon */}
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <img src="/github.svg" alt="GitHub" className={styles.socialIcon} />
-                    </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="/github.svg" alt="GitHub" className={styles.socialIcon} />
+                </a>
 
-                    {/* Facebook Icon */}
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <img src="/facebook.svg" alt="Facebook" className={styles.socialIcon} />
-                    </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="/facebook.svg" alt="Facebook" className={styles.socialIcon} />
+                </a>
 
-                    {/* Twitter Icon */}
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <img src="/twitter.svg" alt="Twitter" className={styles.socialIcon} />
-                    </a>
-                </div>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <img src="/twitter.svg" alt="Twitter" className={styles.socialIcon} />
+                </a>
             </div>
+            
 
-            {/* Copyright Notice */}
+
             <div className={styles.copyRight}>
                 © 2024 Next Mind Labs. All rights reserved.
             </div>
