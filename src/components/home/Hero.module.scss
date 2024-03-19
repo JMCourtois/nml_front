@@ -35,13 +35,15 @@
         color: $primary-dark;
         opacity: 0.8;
 
-        border-radius: 10px; // Rounded corners
-        text-decoration: none; // Removes underline from link
-        cursor: pointer; // Changes cursor to indicate it's clickable
-        transition: background-color 0.3s;
+        border-radius: 10px;
+        text-decoration: none;
+        cursor: pointer;
+
+        transition: background-color 0.3s, transform 0.3s;
 
         &:hover {
-            background-color: $accent-100; // Darkens the button on hover
+            background-color: $accent-100;
+            transform: scale(1.02);
         }
     }
 }
