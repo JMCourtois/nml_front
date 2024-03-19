@@ -1,6 +1,47 @@
 .hero {
-    height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: $slate-500;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    height: 100vh;
+
+    background-image: url('../../../public/Hero.svg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .ctaHero {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        padding-top: 10vh;
+        font-size: 3.5rem;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .button {
+        margin: 20px auto;
+        padding: 8px 24px;
+        background-color: $primary-accent;
+
+        font-family: $font-accent;
+        font-weight: bold;
+        font-size: 18pt;
+        color: $primary-dark;
+        opacity: 0.8;
+
+        border-radius: 10px; // Rounded corners
+        text-decoration: none; // Removes underline from link
+        cursor: pointer; // Changes cursor to indicate it's clickable
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $accent-100; // Darkens the button on hover
+        }
+    }
 }

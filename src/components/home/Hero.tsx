@@ -1,7 +1,13 @@
+import Link from "next/link";
 import styles from "./Hero.module.scss";
 
 export const Hero = () => {
     return(
-        <h1 className={styles.hero}>First page of the web</h1>
+        <div className={styles.hero}>
+            <div className={styles.ctaHero}>
+                <h1>Take Your Career into the Future</h1>
+                <Link href="/courses" className={styles.button}>View Topics</Link>
+            </div>
+        </div>
     )
 }
